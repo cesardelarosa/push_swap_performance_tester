@@ -2,6 +2,33 @@
 
 This repository provides two testing tools to evaluate both the **efficiency** and **correctness** of your *push_swap* solution. It offers a visual and interactive way to analyze the number of moves, execution time, and the accuracy of results.
 
+
+## Usage
+
+1. **Setup**  
+   Make sure to have the `push_swap` and `checker` executables in the paths specified within the scripts.
+
+2. **Run the Performance Test**  
+   From the repository root, run:
+   ```bash
+   ./performance.py
+   ```
+   This script will iterate over various input sizes, display interactive plots, and ultimately perform a curve-fitting analysis to model the solution's complexity.
+
+   ![Performance Test](images/performance.png)
+
+3. **Run the Correctness Test**  
+   To check the correctness of your solution, run:
+   ```bash
+   ./correction.py
+   ```
+   This script will display:
+   - Dynamic plots for `n = 2, 3, 5, 100, 500`  
+   - A real-time updating statistics table with minimum, maximum, average moves, and average time  
+   - Threshold reference lines to gauge performance at a glance
+
+   ![Correction Test](images/correction.png)
+
 ## Repository Contents
 
 - **performance.py**  
@@ -43,32 +70,6 @@ This repository provides two testing tools to evaluate both the **efficiency** a
   - `push_swap` (already compiled)  
   - `checker` or `checker_linux` (depending on your setup)
 
-## Usage
-
-1. **Setup**  
-   Make sure to have the `push_swap` and `checker` executables in the paths specified within the scripts.
-
-2. **Run the Performance Test**  
-   From the repository root, run:
-   ```bash
-   ./performance.py
-   ```
-   This script will iterate over various input sizes, display interactive plots, and ultimately perform a curve-fitting analysis to model the solution's complexity.
-
-   ![Performance Test](images/performance.png)
-
-3. **Run the Correctness Test**  
-   To check the correctness of your solution, run:
-   ```bash
-   ./correction.py
-   ```
-   This script will display:
-   - Dynamic plots for `n = 2, 3, 5, 100, 500`  
-   - A real-time updating statistics table with minimum, maximum, average moves, and average time  
-   - Threshold reference lines to gauge performance at a glance
-
-   ![Correction Test](images/correction.png)
-
 ## Contributing and Contact
 
 This project is intended as a learning tool for the 42 community.  
@@ -78,4 +79,4 @@ If you spot any issues or have suggestions, please open an issue or submit a pul
 
 ## License
 
-This project is distributed under the **GNU GPL3** license. Check the [LICENSE](LICENSE) file for details.
+This project is distributed under the **GNU GPLv3** license. Check the [LICENSE](LICENSE) file for details.
